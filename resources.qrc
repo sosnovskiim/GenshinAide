@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="assets">
+    <file alias="app-icon.png">assets/app-icon.png</file>
+    <file alias="loading-spinner.gif">assets/loading-spinner.gif</file>
+    <file alias="background-main.jpeg">assets/background-main.jpeg</file>
+    <file alias="background-start.jpeg">assets/background-start.jpeg</file>
+  </qresource>
+</RCC>
