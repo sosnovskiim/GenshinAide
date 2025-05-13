@@ -62,8 +62,15 @@ class BuildLoader(QObject):
         if (screenshot is None or
                 not isinstance(screenshot, Image.Image)):
             return "Ошибка: не найден скриншот в буфере обмена"
-        screenshot.crop((1440, 120, 1840, 190)).save(SCREENSHOT_1)
-        screenshot.crop((1490, 870, 1890, 940)).save(SCREENSHOT_2)
+        width, height = screenshot.size
+        screenshot.crop(
+            (width * CROP_LEFT_RATIO_1, height * CROP_UPPER_RATIO_1,
+             width * CROP_RIGHT_RATIO_1, height * CROP_LOWER_RATIO_1)
+        ).save(SCREENSHOT_1)
+        screenshot.crop(
+            (width * CROP_LEFT_RATIO_2, height * CROP_UPPER_RATIO_2,
+             width * CROP_RIGHT_RATIO_2, height * CROP_LOWER_RATIO_2)
+        ).save(SCREENSHOT_2)
 
     def __recognize_character(self) -> str | None:
         """

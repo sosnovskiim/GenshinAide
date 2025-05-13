@@ -781,8 +781,6 @@ class Client:
             return parties_where_main + parties_where_sub
         return parties_where_sub + parties_where_main
 
-    # Если текущим персонажем является Барбара, то рекомендуемые
-    # отряды для неё получаются особенным образом.
     def __get_barbara_parties(self) -> list[list[Character]]:
         """
         Возвращает список отрядов, рекомендуемых для Барбары. В связи

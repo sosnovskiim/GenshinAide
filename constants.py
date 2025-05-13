@@ -8,6 +8,17 @@ APP_NAME = "Genshin Aide"
 # Символ звезды, обозначающей редкость персонажей и предметов.
 CHAR_STAR = "\u2b50"
 
+# Коэффициенты для корректной обрезки скриншота
+# при разных разрешениях окна игры
+CROP_LEFT_RATIO_1 = 0.75
+CROP_UPPER_RATIO_1 = 0.12
+CROP_RIGHT_RATIO_1 = 0.95
+CROP_LOWER_RATIO_1 = 0.20
+CROP_LEFT_RATIO_2 = 0.78
+CROP_UPPER_RATIO_2 = 0.80
+CROP_RIGHT_RATIO_2 = 0.98
+CROP_LOWER_RATIO_2 = 0.88
+
 # Названия файлов, хранящих временные обрезанные скриншоты игры.
 SCREENSHOT_1 = "screenshot-1.png"
 SCREENSHOT_2 = "screenshot-2.png"
